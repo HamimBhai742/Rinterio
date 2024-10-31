@@ -1,9 +1,11 @@
 import React from "react";
+import { CiSearch, CiShoppingCart } from "react-icons/ci";
+import { IoCartOutline } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="mt-3 cc">
+    <div className="mt-3 cc flex justify-between w-[95%] mx-auto">
       <div className="flex gap-2 items-center hover:cursor-pointer">
         <figure className="bg-[#ABEF5F] p-2 rounded-full">
           <img className="" src="../../../images/Group 1.png" alt="" />
@@ -27,16 +29,12 @@ const Navbar = () => {
           Contact Us
         </NavLink>
       </div>
-      <div className="flex items-center gap-3">
-        <div className="flex items-center gap-2">
-          <figure className="bg-[#FFF] p-3 rounded-full">
-            <img src="../../../images/search-01.png" alt="" />
-          </figure>
-          <figure>
-            <img src="../../../images/shopping-cart-01.png" alt="" />
-          </figure>
+      <div className="flex items-center gap-5">
+        <div className="flex items-center gap-3">
+          <CiSearch className="text-2xl" />
+          <IoCartOutline className="text-2xl" />
         </div>
-        <button className="bg-[#ABEF5F] text-[#1C1C1C] px-5 py-3 rounded-full items-center text-xl font-extrabold flex gap-2">
+        <button className="bg-[#ABEF5F] text-[#1C1C1C] px-4 py-2 rounded-full items-center text-xl font-extrabold flex gap-2">
           Book Consult
           <span className="bg-[#1C1C1C] p-2 rounded-full">
             <img className="w-3" src="../../../images/Group 111.png" alt="" />

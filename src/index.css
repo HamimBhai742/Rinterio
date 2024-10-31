@@ -6,6 +6,7 @@
   font-family: "Manrope", sans-serif;
 }
 
-.cc{
-  background: linear-gradient(0deg, #FFFFFF 0%, #FFFFFF00 100%);
+.active{
+  color: #494949;
+  font-weight: 800;
 }
